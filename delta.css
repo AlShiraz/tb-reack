@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Стиль для столбца "Текущий день" */
+.current-day {
+    background-color: rgb(127, 198, 245);
+}
+
+/* Положительные значения для столбцов "Вчера" и "Этот день недели" */
+.positive {
+    background-color: rgb(151, 238, 180);
+}
+
+/* Отрицательные значения для столбцов "Вчера" и "Этот день недели" */
+.negative {
+    background-color: rgb(243, 144, 141);
+}
+
+/* Процентные значения с положительными изменениями */
+.positive-percent {
+    color: rgb(17, 107, 47);
+}
+
+/* Процентные значения с отрицательными изменениями */
+.negative-percent {
+    color: rgb(235, 71, 65);
+}
+
+#chart-container {
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная таблица</title>
+    <link rel="stylesheet" href="delta.css">
+</head>
+<body>
+    <div class="container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Показатель</th>
+                    <th>Текущий день</th>
+                    <th>Вчера</th>
+                    <th>%</th>
+                    <th>Этот день недели</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="showChart(0)">
+                    <td>Выручка, руб</td>
+                    <td>500 521</td>
+                    <td>480 521</td>
+                    <td>4%</td>
+                    <td>4 805 121</td>
+                </tr>
+                <tr id="chart-row" style="display: none;">
+                    <td colspan="5">
+                        <div id="chart-container"></div>
+                    </td>
+                </tr>
+                <tr onclick="showChart(1)">
+                    <td>Наличные</td>
+                    <td>300 000</td>
+                    <td>300 000</td>
+                    <td>0%</td>
+                    <td>300 000</td>
+                </tr>
+                <tr onclick="showChart(2)">
+                    <td>Безналичный расчет</td>
+                    <td>100 000</td>
+                    <td>100 000</td>
+                    <td>0%</td>
+                    <td>100 000</td>
+                </tr>
+                <tr onclick="showChart(3)">
+                    <td>Кредитные карты</td>
+                    <td>100 521</td>
+                    <td>100 521</td>
+                    <td>0%</td>
+                    <td>100 521</td>
+                </tr>
+                <tr onclick="showChart(4)">
+                    <td>Средний чек, руб</td>
+                    <td>1 300</td>
+                    <td>900</td>
+                    <td>44%</td>
+                    <td>900</td>
+                </tr>
+                <tr onclick="showChart(5)">
+                    <td>Средний гость, руб</td>
+                    <td>1 200</td>
+                    <td>800</td>
+                    <td>50%</td>
+                    <td>800</td>
+                </tr>
+                <tr onclick="showChart(6)">
+                    <td>Удаление из чека (после оплаты), руб</td>
+                    <td>1 000</td>
+                    <td>1 100</td>
+                    <td>-9%</td>
+                    <td>900</td>
+                </tr>
+                <tr onclick="showChart(7)">
+                    <td>Удаление из чека (до оплаты), руб</td>
+                    <td>1 300</td>
+                    <td>1 300</td>
+                    <td>0%</td>
+                    <td>900</td>
+                </tr>
+                <tr onclick="showChart(8)">
+                    <td>Количество чеков</td>
+                    <td>34</td>
+                    <td>36</td>
+                    <td>-6%</td>
+                    <td>34</td>
+                </tr>
+                <tr onclick="showChart(9)">
+                    <td>Количество гостей</td>
+                    <td>34</td>
+                    <td>36</td>
+                    <td>-6%</td>
+                    <td>32</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="delta.js"></script>
+</body>
+</html>
